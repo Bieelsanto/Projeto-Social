@@ -3,6 +3,7 @@
     margin: 0px;
 }
 img{
+    margin-bottom: -3px;
    width: 100vw; 
 }
 ::-webkit-scrollbar{
@@ -10,7 +11,6 @@ img{
     height: 0px;
 }
 a{
-    margin:-4px;
     display: block;
     background-color: darkred;
     padding: 20px;
@@ -20,8 +20,15 @@ a{
     text-decoration: none;
     color: white;
     transition-duration: 0.1s;
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-direction: normal;
 }
 a:hover{
     font-size: 1.4em;
     transition-duration: 0.2s;
+}
+@keyframes aparecer{
+    0%{padding: 0px;}
+    100%{padding:20px;}
 }
